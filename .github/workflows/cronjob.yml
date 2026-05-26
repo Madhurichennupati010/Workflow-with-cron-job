@@ -1,0 +1,19 @@
+name: Cron job example
+
+on:
+  schedule:
+    - cron: '*/2 * * * *'
+
+jobs:
+  Backup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Message
+        run: echo "Workflow running every 2 minutes"
+
+ 
+    
+
+    
+ 
